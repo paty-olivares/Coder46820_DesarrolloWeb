@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKMASTER - Viva el Rock</title>
+     <!-- favicon-->
+     <link rel="shortcut icon" href="./img/rock_favicon.png" type="image/x-icon">
+    <!--Implementando Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Mi CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+     <!--Implementación de Toastify-->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="container-fluid">
+    <header>
+        <a href="">
+            <img src="./img/logo.png" alt="Logo" >
+        </a>
+        <!--Implementando Un NavBar con Estilo Dark -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ROCKMASTER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/bandas.html">Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="./pages/boletos.html" tabindex="-1" aria-disabled="true">Boletos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="./pages/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="./pages/ubicacion.html" tabindex="-1" aria-disabled="true">Ubicacion</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="botonSearch" class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1> Los boletos de tus bandas de Rock Favoritas </h1>
+        <h2>  Encuéntralos aquí! </h2>
+    
+<!---->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xxl-2">
+  <div class="col">
+    <!-- Implementando un Carousel -->    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img   src="./img/ticket_qosta.png" class="d-block w-100" alt="Queens Of Stone Age">
+        </div>
+        <div class="carousel-item">
+          <img   src="./img/ticket_thehives.png" class="d-block w-100" alt="The Hivers">
+        </div>
+        <div class="carousel-item">
+          <img width="500" hight="300"  src="./img/ticket_thefoo.png" class="d-block w-100" alt="Foo Fighers">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- Carousel -->  
+  </div>
+  <div class="col">
+    <h2>¡ Dile No a los Mafiosos de Tickemaster ! ¡ No más falsificaciones ! ¡ No más estafas ! </h2>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit similique voluptatibus mollitia modi atque praesentium nihil unde beatae, aperiam ipsa! Accusantium illo officiis cum consequuntur corrupti iste ullam laborum ab.
+    Nobis sit exercitationem nihil earum provident a consequatur doloribus atque dolorem quo, incidunt ducimus esse vero quasi nulla eum ex odit unde sint! Ut maxime porro rem ea. Pariatur, odit.
+    Laboriosam sequi ullam quas quasi doloribus alias temporibus! Deserunt, soluta delectus. 
+  </h3>
+</div>  
+</div>
+<!-- Agregando futuros eventos usando Cards -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 row-cols-xxl-4">
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+      <img src="./img/hombre-juega-saxofon.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Festival de Jazz</h5>
+        <p class="card-text">Querétaro 18/09/2023</p>        
+        <button id="botonSearch1" class="btn btn-primary" type="submit">Comprar</button>
+      </div>
+    </div>
+
+  </div> 
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+      <img src="./img/jackwhite.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Jack White</h5>
+        <p class="card-text">Ciudad de México 20/12/2023</p>
+        <button id="botonSearch2" class="btn btn-primary" type="submit">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+      <img src="./img/guns-n-roses-muse-slipknot-y-mas-en-hell-heaven-open-air-2023.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hell & Heaven</h5>
+        <p class="card-text">Puebla 20/12/2023</p>
+        <button id="botonSearch3" class="btn btn-primary" type="submit">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+      <img src="./img/primer-plano-mascara-carnaval-femenina-libros-escritorio-madera.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Teatro</h5>
+        <p class="card-text">Ciudad de México 20/12/2023</p>
+        <button id="botonSearch4" class="btn btn-primary" type="submit">Comprar</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+    
+</main>
+ <!-- -->   
+ <footer>
+  <h3>Todos los Derechos Reservados ©2023</h3> 
+  <div class="redesSociales">
+   <h5>Síguenos en nuestras redes</h5>
+   
+   <div class="social-media-icons">
+    <a href="#" title=""> <img class="iconosRedes" src="./img/facebook.png" alt="facebook"></a>
+    <a href="#" title=""> <img class="iconosRedes" src="./img/instagram.png" alt="instagram"></a>
+    <a href="#" title=""> <img class="iconosRedes" src="./img/whatsapp.png" alt="whatsapp"></a>
+   </div>
+  </div>
+</footer> 
+
+ <!--Mi JS -->     
+    <script src="./js/misalertas.js"></script>
+<!--Toastify -->
+   <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+<!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
