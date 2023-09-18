@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+
+.fondoNavbar {
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Background*/
+
+
+
+/* Body */
+body {
+  /*background-image: url("../img/background.png");
+  background-repeat:repeat-x;
+  background-repeat:repeat-y;
+  */
+  background-color: #14020c;
+  background-image: linear-gradient(225deg, #14020c 0%, #342258 33%, #2f0d08 66%);
+  
+  font-style: normal ;
+  color:white;  
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+/* Header*/
+header {
+    border-bottom: 1px solid silver;
+    text-align: center;
+    padding: 10px 20px;
+  /*  display: inline;*/
+}
+
+.logo {
+    width: auto;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold ;
+    color: cornsilk;
+}
+
+/* Main */
+main{
+  /* margin: 50px;*/
+    padding: 50px;
+}
+
+.textIndex {
+   margin-top: 20px;
+
+}
+
+h1,h2 {
+  text-align: center;   
+  margin: 20px 20px;
+}
+/* Footer */
+
+footer {
+    background-image: url("../img/background.png");
+   /* background-repeat:repeat-x;*/
+    /*background-repeat:repeat-y;*/
+    /*background-color: black;*/
+    /*margin: 20px;*/
+   /* padding: 100px;*/
+   /* border-top: 1px solid silver;*/
+    text-align: center;
+}
+
+/* Footer Redes Sociales*/
+.iconosRedes {
+    margin: 5px 5px;
+    padding-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+.redesSociales h5 {
+    padding-top: 10px;
+    
+}
+
+/* Containers para mis imagenes*/
+.containerBandas{
+    margin: 5px;
+    border: 1px solid slategrey;
+    border-radius: 20px;
+}
+
+.containerBandas p {
+   background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.imgBandas{
+    display: block;
+    width: 1000px;
+    height: 640px;
+    border-radius: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.myfigure-caption {
+    font-size: .875em;
+    color:  blanchedalmond;
+}
+
+/* Contacto */
+form {
+ margin-top: 20px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: blanchedalmond;    
+}
+
+input[type="text"],
+textarea {
+    display:inline-block;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;    
+    
+}
+
+ .botones {
+       /* background-color: white;*/
+       color: #fff !important;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        background: unset;
+        border: 2px solid;
+        border-color: silver;
+        border-radius: 20px;
+        position: relative;
+        margin: 30px 10px;
+    }
+    
+    .cardButton {
+        text-align: center;
+    }
+    /* Efecto hover */
+    .botones:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    /* Pagina de Compra de Boletos */
+    .comprar  {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: blanchedalmond;
+        font-size: 20px;
+        display: inline-block;
+        margin: 10px 100px;
+
+    }
+
+    /* iFrame*/ 
+    iframe{
+        display: block;
+        margin: auto;
+    }
+    .containerAPI {
+        margin-top: 50px;
+        text-align: justify;
+        color: white;
+        display: inline-block;
+    }
+    
+    .containerAPI h2 {
+    text-align: justify;
+    margin-top: 20px;
+    }
+    
+    .containerAPIImg {
+        margin-top: 20px;
+        
+       
+    }

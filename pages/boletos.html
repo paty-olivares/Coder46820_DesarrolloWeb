@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKMASTER - Viva el Rock</title>
+     <!-- Un bonito favicon-->
+     <link rel="shortcut icon" href="../img/rock_favicon.png" type="image/x-icon">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <!-- <link rel="stylesheet" href="./css/estilos.css">-->
+     <!-- Entrega 3 :  Mi CSS con SASS-->
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="../img/logo.png" alt="Logo" >
+        </a>
+                <!--Implementando Un NavBar con Estilo Dark de Boostrap-->
+                <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">ROCKMASTER</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                            aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarDark">
+                            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="bandas.html" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active"  href="nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="bandas.html">Bandas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="boletos.html">Boletos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="ubicacion.html">Ubicacion</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button id="botonSearch" class="btn btn-outline-light" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+    </header>
+    
+    <main>
+        <h1> Adquiere tus boletos aquí: </h1>
+        <h2> Selecciona el evento de tu preferencia. Pronto habrá mayor cantidad de atracciones.</h2>
+        
+    
+     <!---->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xxl-2">
+    <div class="col">
+    <!-- col -->  
+    </div>
+
+    <div class="col">
+      <!-- col -->  
+    </div>  
+  </div>
+  <!-- Agregando La lista de Boletos para compra -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 row-cols-xxl-4">
+    <div class="col">
+      <div class="card">
+        <img src="../img/QOTSA-Featured-Image.webp.png" class="card-img-top" alt="Boletos Jazz">
+        <div class="card-body">
+          <h5 class="card-title">Queen of Stone Age</h5>
+          <p class="card-text">Guadalajara 20/09/2023</p>
+          <div id="card1button" class="cardButton">
+           <button id="botonComprar1" class="btn btn-primary" type="submit">+</button>
+           <button id="botonElimnar1" class="btn btn-danger" type="submit">-</button>
+         </div>       
+        </div>
+      </div>
+    </div> 
+    <div class="col">
+      <div class="card">
+        <img src="../img/thehives_1200x900.jpg" class="card-img-top" alt="Boletos Jazz">
+        <div class="card-body">
+          <h5 class="card-title">The Hives</h5>
+          <p class="card-text">Ciudad de México 20/09/2023</p>       
+          <div id="card1button" class="cardButton">
+            <button id="botonComprar2" class="btn btn-primary" type="submit">+</button>
+            <button id="botonElimnar2" class="btn btn-danger" type="submit">-</button>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/thefoo_1200x900.jpg" class="card-img-top" alt="Boletos Jazz">
+        <div class="card-body">
+          <h5 class="card-title">Foo Fighters</h5>
+          <p class="card-text">Guadalajara 28/10/2023</p>       
+          <div id="card1button" class="cardButton">
+            <button id="botonComprar3" class="btn btn-primary" type="submit">+</button>
+            <button id="botonElimnar3" class="btn btn-danger" type="submit">-</button>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/teatro_1200x900.png" class="card-img-top" alt="Boletos Jazz">
+        <div class="card-body">
+          <h5 class="card-title">Teatro</h5>
+          <p class="card-text">Ciudad de México 10/11/2023</p>       
+          <div id="card1button" class="cardButton">
+            <button id="botonComprar4" class="btn btn-primary" type="submit">+</button>
+            <button id="botonElimnar4" class="btn btn-danger" type="submit">-</button>
+          </div>  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  </main>    
+    <footer>
+        <div class="redesSociales">
+            <h5>Todos los Derechos Reservados ©2023 | Síguenos en nuestras redes</h5>   
+             
+             <div class="social-media-icons">
+                <a href="#" title=""> <img class="iconosRedes" src="../img/facebook.png" alt="facebook"></a>
+                <a href="#" title=""> <img class="iconosRedes" src="../img/instagram.png" alt="facebook"></a>
+                <a href="#" title=""> <img class="iconosRedes" src="../img/whatsapp.png" alt="facebook"></a>
+             </div>
+        </div>
+     </footer>
+     <!--Mi JS -->     
+     <script src="../js/misalertas_boletos.js"></script>
+     <!--Toastify -->
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+         <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+     <!-- Boostrap -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     
+</body>
+</html>

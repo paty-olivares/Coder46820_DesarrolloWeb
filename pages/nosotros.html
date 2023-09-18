@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKMASTER - Viva el Rock</title>
+     <!-- Un bonito favicon-->
+     <link rel="shortcut icon" href="../img/rock_favicon.png" type="image/x-icon">
+     <!--Implementando Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <!-- <link rel="stylesheet" href="./css/estilos.css">-->
+     <!-- Entrega 3 :  Mi CSS con SASS-->
+     <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body class="container-fluid">
+    <header>
+        <a href="">
+            <img src="../img/logo.png" alt="Logo" >
+        </a>
+        <!--Implementando Un NavBar con Estilo Dark -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">ROCKMASTER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="bandas.html" >Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="boletos.html">Boletos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ubicacion.html">Ubicacion</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="botonSearch" class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+<main>
+        <h1> Acerca de Nosotros </h1>
+        <h2> Aquí un poco de nuestra historia: </h2>    
+  <!---->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xxl-2">
+      <div class="col">        
+        <img src="../img/conciertos.png" class="img-fluid" alt="Quienes Somos">      
+      </div>
+      <div class="col">
+        <h3>Somos una empresa formada por fervientes amantes del Rock. Cansados de las estafas y del monopolio para la venta de los boletos de nuestras artistas favoritos. Decidimos unirnos y asociarnos para competir en el mercado. Aquí podrás obtener noticias sobre tus artistas favortios así como los detalles de sus eventos y presentaciones actualizadas.</h3>
+      </div>      
+    </div>
+  </div>  
+  <!---->
+</main>
+   <!--Footer -->   
+<footer>
+    <div class="redesSociales">
+        <h5>Todos los Derechos Reservados ©2023 | Síguenos en nuestras redes</h5>   
+         
+         <div class="social-media-icons">
+            <a href="#" title=""> <img class="iconosRedes" src="../img/facebook.png" alt="facebook"></a>
+            <a href="#" title=""> <img class="iconosRedes" src="../img/instagram.png" alt="facebook"></a>
+            <a href="#" title=""> <img class="iconosRedes" src="../img/whatsapp.png" alt="facebook"></a>
+         </div>
+    </div>
+</footer> 
+ 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

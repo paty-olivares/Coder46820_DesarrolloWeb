@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bandas de Rock Favorito">
+    <meta name="keywords" content="Rock, Bandas de Rock, Boletos, Ticketmaster">
+
+    <title>ROCKMASTER - Viva el Rock</title>
+     <!-- favicon-->
+     <link rel="shortcut icon" href="./img/rock_favicon.png" type="image/x-icon">
+    <!--Implementando Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Mi CSS-->
+    <!-- <link rel="stylesheet" href="./css/estilos.css">-->
+     <!-- Entrega 3 :  Mi CSS con SASS-->
+     <link rel="stylesheet" href="./css/styles.css">
+     <!--Implementación de Toastify-->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="container-fluid">
+    <header>
+        <a href="">
+            <img src="./img/logo.png" alt="Logo" >
+        </a>
+        <!--Implementando Un NavBar con Estilo Dark -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">ROCKMASTER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="./pages/bandas.html">Bandas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/boletos.html">Boletos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./pages/ubicacion.html">Ubicacion</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="botonSearch" class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1> Los boletos de tus bandas de Rock Favoritas </h1>
+        <h2>  Encuéntralos aquí! </h2>
+    
+<!---->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xxl-2">
+  <div class="col">
+    <!-- Implementando un Carousel -->    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img   src="./img/ticket_qosta.png" class="d-block w-100" alt="Queens Of Stone Age">
+        </div>
+        <div class="carousel-item">
+          <img   src="./img/ticket_thehives.png" class="d-block w-100" alt="The Hivers">
+        </div>
+        <div class="carousel-item">
+          <img width="500" hight="300"  src="./img/ticket_thefoo.png" class="d-block w-100" alt="Foo Fighers">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- Carousel -->  
+  </div>
+  <div class="col">
+    <h2>¡ Dile No a los Mafiosos de Tickemaster ! ¡ No más falsificaciones ! ¡ No más estafas ! </h2>
+    <h3>Bievenido a RockMaster.com, el sitio donde encontrarás los boletos de tus bandas favoritas, de forma segura y confiable. Recibirás tu boleto electrónico encriptado en tu correo a prueba de clonaciones.
+  </h3>
+</div>  
+</div>
+
+
+<!-- Otro Bonito Estilo de Cards -->
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xxl-1">
+<div class="card-group">
+  <div class="card">
+    <img src="./img/hombre-juega-saxofon.jpg" class="card-img-top" alt="Boletos Jazz">
+    <div class="card-body">
+      <h5 class="card-title">Festival de Jazz</h5>
+      <p class="card-text">Ven a disfrutar de este majestuoso festival en una de las ciudades más hermosas de México, San Miguel de Allende</p>
+      <p class="card-text"><small class="text-muted">San Miguel de Allende 18/09/2023</small></p>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./pages/boletos.html">+Info</a>
+        </li>
+      </ul> 
+     
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/jackwhite.png" class="card-img-top" alt="Boletos Jack White">
+    <div class="card-body">
+      <h5 class="card-title">Jack White</h5>
+      <p class="card-text">Uno de los multi-intrumentistas y guitarristas más virtuosos de los últimos tiempos, estará de visita en la Ciudad de México en su tour Supply Chain Issues Tour.</p>
+      <p class="card-text"><small class="text-muted">Ciudad de México 20/12/2023</small></p>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./pages/boletos.html">+Info</a>
+        </li>
+      </ul> 
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/vocalista-guitarrista-escenario.jpg" class="card-img-top" alt="Hell and Heaven">
+    <div class="card-body">
+      <h5 class="card-title">Hell & Heaven</h5>
+      <p class="card-text">Disfruta del mejor festival de metal de latinoamérica, con grandes represantes del género como Slipknot, Guns N’ Roses, Muse y  muchos más.</p>
+      <p class="card-text"><small class="text-muted">Puebla 20/12/2023</small></p>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./pages/boletos.html">+Info</a>
+        </li>
+      </ul> 
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/primer-plano-mascara-carnaval-femenina-libros-escritorio-madera.jpg" class="card-img-top" alt="Boletos Teatro">
+      <div class="card-body">
+        <h5 class="card-title">Teatro</h5>
+        <p class="card-text">Ven a disfrutar en esta ciudad cosmopolita y diversa de la cartelera más actualizada de lo mejor de las artes escénicas de la Ciudad de México.</p>
+        <p class="card-text"><small class="text-muted">Ciudad de México</small></p>
+        
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/boletos.html">+Info</a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+</div>
+</div>      
+    
+</main>
+ <!-- -->   
+ <footer>
+  <div class="redesSociales">
+   <h5>Todos los Derechos Reservados ©2023 | Síguenos en nuestras redes</h5>   
+   <div class="social-media-icons">
+    <a href="#" title=""> <img class="iconosRedes" src="./img/facebook.png" alt="facebook"></a>
+    <a href="#" title=""> <img class="iconosRedes" src="./img/instagram.png" alt="instagram"></a>
+    <a href="#" title=""> <img class="iconosRedes" src="./img/whatsapp.png" alt="whatsapp"></a>
+   </div>
+  </div>
+</footer> 
+
+ <!--Mi JS -->     
+    <script src="./js/misalertas.js"></script>
+<!--Toastify -->
+   <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+<!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
